@@ -169,6 +169,9 @@ body {
 .container-fluid{
   padding: 0 5rem;
 }
+.container-fluidLarge{
+  padding: 0 10rem;
+}
 section {
   padding: 10px 0 80px 0;
   position: relative;

@@ -1,4 +1,10 @@
 @media (min-width: 0px) and (max-width: 767px) {
+  .navbar-toggler{
+    padding-right: 0px !important;
+  }
+  .container-fluidLarge {
+    padding: 0 1rem;
+  }
   .btn--medium{
     display: flex;
     justify-content: center;
@@ -82,9 +88,41 @@
   .main-gallery__content .slick-prev, .main-gallery__content .slick-next {
     top: 18rem !important;
   }
+  .nav-item{
+    padding-left: 1rem;
+  }
+  .nav-item:last-child {
+    padding: 0 1rem;
+  } 
+  #myModal .close, #myModal1 .close{
+    top: 10rem;
+    right: 1rem;
+  }
+  .prev, .next{
+    top:30rem;
+  }
+  .prev {
+    left: 5rem;
+  }
+  .next {
+    right: 5rem;
+  }
+  .btn--large{
+    display: flex;
+    justify-content: center;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .navbar-toggler{
+    padding-right: 0px !important;
+  }
+  .nav-item:last-child, .nav-item{
+    padding-left: 1rem;
+  }
+  .container-fluidLarge {
+    padding: 0 3rem;
+  }
   .main-brand{
     width: 100%;
     display: flex;
@@ -163,7 +201,25 @@
     font-size: 13px;
   }
   .main-footer__img img{
-    width: 75%;
+    width: 65%;
+  }
+  .main-twoform__item:nth-child(2){
+    padding-left: 2rem;
+    padding-top: 2rem;
+  }
+  .main-twoform__item form{
+    width: 95%;
+  }
+  .btn--large{
+    font-size: 13px;
+  }
+  .main-twoform__img {
+    height: 300px;
+  }
+  .main-twoform__img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
   .main-footer__item dt{
     font-size: 14px;
@@ -177,9 +233,7 @@
   .slider-for .slick-dots li:nth-child(1):after, .slider-for .slick-dots li:nth-child(2):after, .slider-for .slick-dots li:nth-child(3):after, .slider-for .slick-dots li:nth-child(4):after{
     font-size: 15px;
   }
-  .main-twoform__img img{
-    object-fit: unset;
-  }
+  
   .main-about{
     padding-bottom: 50px;
   }
@@ -193,6 +247,13 @@
   }
   .main-gallery__content .slick-prev, .main-gallery__content .slick-next {
     top: 20rem !important;
+  }
+  #myModal .close, #myModal1 .close{
+    top: 5rem;
+    right: 3rem;
+  }
+  .prev, .next{
+    top:19rem;
   }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
@@ -217,6 +278,20 @@
   }
   .main-banner .mask{
     width: 45%;
+  }
+  .container-fluidLarge {
+    padding: 0 2rem;
+  }
+  .next {
+    right: 3rem;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev{
+    left: 3rem;
+  }
+  #myModal .close, #myModal1 .close{
+    top: 2rem;
+    right: 3rem;
   }
 }
 
