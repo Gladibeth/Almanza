@@ -104,9 +104,9 @@
                   <span>LOTES</span>
 
                 </div> 
-                <div class="main-banner__dates">
+                <div class="main-banner__dates main-banner__dates--first">
                   <span>Ubicación</span>
-                  <p>Ubicación 
+                  <p>
                     LLano Grande, Rionegro
                     El proyecto más cercano
                     al Túnel del Oriente.</p>
@@ -161,7 +161,7 @@
                         <a href="assets/pdf/MANUAL_DE_POLITICAS_PROMOTORA.pdf" target="blank">Politicas y Privacidad</a>
                       </label>
                     </div>
-                  <div class="main-contact__btnbox">
+                  <div class="">
                     <a class="btn_custom btn--small btn--filled" href="#">
                       Enviar
                     </a>
@@ -273,22 +273,22 @@
           </div>
           <div class="main-gallery__content">
             <div class="main-gallery__item">
-              <div class="main-gallery__img">
+              <div class="main-gallery__img" onclick="openModal();currentSlide(1)">
                 <img src="assets/img/gallery1.png" alt="">
               </div>
-              <div class="main-gallery__img">
+              <div class="main-gallery__img" onclick="openModal();currentSlide(2)">
                 <img src="assets/img/gallery2.png" alt="">
               </div>
-              <div class="main-gallery__img">
+              <div class="main-gallery__img" onclick="openModal();currentSlide(3)">
                 <img src="assets/img/gallery2.png" alt="">
               </div>
-              <div class="main-gallery__img">
+              <div class="main-gallery__img" onclick="openModal();currentSlide(4)">
                 <img src="assets/img/gallery2.png" alt="">
               </div>
-              <div class="main-gallery__img">
+              <div class="main-gallery__img" onclick="openModal();currentSlide(5)">
                 <img src="assets/img/gallery2.png" alt="">
               </div>
-              <div class="main-gallery__img">
+              <div class="main-gallery__img" onclick="openModal();currentSlide(6)">
                 <img src="assets/img/gallery2.png" alt="">
               </div>
             </div>
@@ -328,7 +328,7 @@
                   <strong>del proyecto</strong>
                 </p>
               </div>
-              <div class="main-zone__list">
+              <div class="main-zone__list main-zone__list--first">
                 <div class="main-zone__listimg">
                   <img src="assets/img/Zonas/icon.png" alt="">
                 </div>
@@ -384,13 +384,12 @@
             <div class="slider slider-for">
               <div><h3></h3></div>
               <div><h3></h3></div>
-              <div><h3></h3></div>
             </div>
             <div class="slider slider-nav">
               <div class="main-slidernav__boxcontent">
                 <div class="main-slidernav__content">
                   <div class="main-slidernav__item">
-                    <div class="main-slidernav__img">
+                    <div class="main-slidernav__img" onclick="openModal1();currentSlide1(1)">
                       <img src="assets/img/Planos/planos-1.jpg" alt="">
                     </div>
                   </div>
@@ -401,7 +400,7 @@
                           <img src="assets/img/Planos/icon-1.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>Cocina mesón</p>
+                          <p>Cocina abierta a zona social</p>
                         </div>
                       </div>
                       <div class="main-zone__list">
@@ -409,7 +408,7 @@
                           <img src="assets/img/Planos/icon-2.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>Zona de ropa</p>
+                          <p>Centro de lavado independiente</p>
                         </div>
                       </div>
                       <div class="main-zone__list">
@@ -417,7 +416,7 @@
                           <img src="assets/img/Planos/icon-3.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>2 baños</p>
+                          <p>Baño auxiliar/social</p>
                         </div>
                       </div>
                       <div class="main-zone__list">
@@ -425,7 +424,7 @@
                           <img src="assets/img/Planos/icon-4.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>2 alcobas</p>
+                          <p>Zona verde</p>
                         </div>
                       </div>
                       <div class="main-zone__list">
@@ -433,7 +432,7 @@
                           <img src="assets/img/Planos/icon-5.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>2 salón/comedor</p>
+                          <p>Estudio</p>
                         </div>
                       </div>
                          <div class="main-zone__list">
@@ -441,7 +440,7 @@
                           <img src="assets/img/Planos/icon-5.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>2 salón/comedor</p>
+                          <p>Parqueadero doble</p>
                         </div>
                       </div>
                          <div class="main-zone__list">
@@ -449,7 +448,7 @@
                           <img src="assets/img/Planos/icon-5.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>2 salón/comedor</p>
+                          <p>Alcoba con vestier/alcoba 2 y 3</p>
                         </div>
                       </div>
                          <div class="main-zone__list">
@@ -457,7 +456,7 @@
                           <img src="assets/img/Planos/icon-5.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>2 salón/comedor</p>
+                          <p>Closet de linos</p>
                         </div>
                       </div>
                          <div class="main-zone__list">
@@ -465,76 +464,17 @@
                           <img src="assets/img/Planos/icon-5.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>2 salón/comedor</p>
+                          <p>Alcoba principal con baño privado y vestier</p>
                         </div>
                       </div>
-                         <div class="main-zone__list">
-                        <div class="main-zone__listimg">
-                          <img src="assets/img/Planos/icon-5.png" alt="">
-                        </div>
-                        <div class="main-zone__description">
-                          <p>2 salón/comedor</p>
-                        </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-                   <div class="main-slidernav__boxcontent">
-                <div class="main-slidernav__content">
-                  <div class="main-slidernav__item">
-                    <div class="main-slidernav__img">
-                      <img src="assets/img/Planos/planos-1.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="main-slidernav__item">
-                    
-                      <div class="main-zone__list">
-                        <div class="main-zone__listimg">
-                          <img src="assets/img/Planos/icon-1.png" alt="">
-                        </div>
-                        <div class="main-zone__description">
-                          <p>Cocina mesón</p>
-                        </div>
-                      </div>
-                      <div class="main-zone__list">
-                        <div class="main-zone__listimg">
-                          <img src="assets/img/Planos/icon-2.png" alt="">
-                        </div>
-                        <div class="main-zone__description">
-                          <p>Zona de ropa</p>
-                        </div>
-                      </div>
-                      <div class="main-zone__list">
-                        <div class="main-zone__listimg">
-                          <img src="assets/img/Planos/icon-3.png" alt="">
-                        </div>
-                        <div class="main-zone__description">
-                          <p>2 baños</p>
-                        </div>
-                      </div>
-                      <div class="main-zone__list">
-                        <div class="main-zone__listimg">
-                          <img src="assets/img/Planos/icon-4.png" alt="">
-                        </div>
-                        <div class="main-zone__description">
-                          <p>2 alcobas</p>
-                        </div>
-                      </div>
-                      <div class="main-zone__list">
-                        <div class="main-zone__listimg">
-                          <img src="assets/img/Planos/icon-5.png" alt="">
-                        </div>
-                        <div class="main-zone__description">
-                          <p>2 salón/comedor</p>
-                        </div>
-                      </div>
+                         
                   </div>
                 </div>
               </div>
               <div class="main-slidernav__boxcontent">
                 <div class="main-slidernav__content">
                   <div class="main-slidernav__item">
-                    <div class="main-slidernav__img">
+                    <div class="main-slidernav__img" onclick="openModal1();currentSlide1(2)">
                       <img src="assets/img/Planos/planos-1.jpg" alt="">
                     </div>
                   </div>
@@ -545,7 +485,7 @@
                           <img src="assets/img/Planos/icon-1.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>Cocina mesón</p>
+                          <p>Cocina abierta a zona social</p>
                         </div>
                       </div>
                       <div class="main-zone__list">
@@ -553,7 +493,7 @@
                           <img src="assets/img/Planos/icon-2.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>Zona de ropa</p>
+                          <p>Centro de lavado independiente</p>
                         </div>
                       </div>
                       <div class="main-zone__list">
@@ -561,7 +501,7 @@
                           <img src="assets/img/Planos/icon-3.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>2 baños</p>
+                          <p>Baño auxiliar/social</p>
                         </div>
                       </div>
                       <div class="main-zone__list">
@@ -569,7 +509,7 @@
                           <img src="assets/img/Planos/icon-4.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>2 alcobas</p>
+                          <p>Zona verde</p>
                         </div>
                       </div>
                       <div class="main-zone__list">
@@ -577,12 +517,46 @@
                           <img src="assets/img/Planos/icon-5.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>2 salón/comedor</p>
+                          <p>Estudio</p>
                         </div>
                       </div>
+                         <div class="main-zone__list">
+                        <div class="main-zone__listimg">
+                          <img src="assets/img/Planos/icon-5.png" alt="">
+                        </div>
+                        <div class="main-zone__description">
+                          <p>Parqueadero doble</p>
+                        </div>
+                      </div>
+                         <div class="main-zone__list">
+                        <div class="main-zone__listimg">
+                          <img src="assets/img/Planos/icon-5.png" alt="">
+                        </div>
+                        <div class="main-zone__description">
+                          <p>Alcoba con vestier/alcoba 2 y 3</p>
+                        </div>
+                      </div>
+                         <div class="main-zone__list">
+                        <div class="main-zone__listimg">
+                          <img src="assets/img/Planos/icon-5.png" alt="">
+                        </div>
+                        <div class="main-zone__description">
+                          <p>Closet de linos</p>
+                        </div>
+                      </div>
+                         <div class="main-zone__list">
+                        <div class="main-zone__listimg">
+                          <img src="assets/img/Planos/icon-5.png" alt="">
+                        </div>
+                        <div class="main-zone__description">
+                          <p>Alcoba principal con baño privado y vestier</p>
+                        </div>
+                      </div>
+                         
                   </div>
                 </div>
               </div>
+                   
             </div>
           </div>
         </div>
@@ -591,13 +565,12 @@
       <section class="main-zone">
         <div class="container-fluid">
           <div class="main-title__general">
-                <p>
-                  
-                  <strong>Urbanismo</strong>
-                </p>
-              </div>
+            <p>
+              
+              <strong>Urbanismo</strong>
+            </p>
+          </div>
           <div class="main-zone__content">
-            
             <div class="main-zone__item">
               <div class="main-zone__img">
                 <img src="assets/img/plano.png" alt="">
@@ -606,13 +579,20 @@
             <div class="main-zone__item">
               
               <div class="main-title__general main-title__general">
-            <p>
-                  
-              <strong>65 lotes </strong><br>
-              urbanizados
-            </p>
-          </div>
-              
+                <p>
+                      
+                  <strong>65 lotes </strong><br>
+                  urbanizados
+                </p>
+              </div>
+              <div class="main-description__general">
+                <p>Un urbanismo completamente plano, rodeado de un ambiente campestre.</p>
+                <div class="main-urbanismos__grados">
+                  <strong>180º </strong>
+                  <br>
+                  <strong>314 m² </strong>
+                </div>
+              </div>
     
             </div>
             <div id="planos-proyecto"></div>
@@ -742,25 +722,78 @@
               </ul>
               <dl>
                 <dt>Dirección</dt>
-                <dd><a target="_blank" href=""> Calle 10 con carrera 15 la ceja.</a></dd>
+                <dd><a target="_blank" href=""> +500 vía Barro Blanco - La Amalita.</a></dd>
                 <dt>Teléfono</dt>
                 <dd>
-                  <a target="_blank" href='tel:575684325'>+ 57 5684325</a>
+                  <a target="_blank" href='tel:575539634'>+ + 57 5539634</a>
                 </dd>
                 <dt>Celular</dt>
                 <dd>
-                  <a target="_blank" href='tel:573148775701'>+ 57 3173606901</a>
+                  <a target="_blank" href='tel:573134579977'>+ 57 3134579977</a>
                 </dd>
               </dl>
-              <a class='btn_custom btn--medium btn--filledTransparent' target="_blank" href=''>Descargar Brochure</a>
+              <a class='btn_custom btn--large btn--filledTransparent' target="_blank" href=''>Descargar Brochure</a>
             </div>
           </div>
+          
         </div>
         <div class="main-footer__copy">
-          <a target="_blank" href="">Copyright © 2020 Branch</a>
+          <a target="_blank" href="https://branch.com.co/">Copyright © 2020 Branch</a>
         </div>
+        
       </footer>
   </div>
+
+   <!-- MODAL -->
+
+   <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+      <div class="mySlides">
+        <img src="assets/img/gallery1.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <img src="assets/img/gallery2.png" style="width:100%">
+      </div>
+  
+      <div class="mySlides">
+        <img src="assets/img/gallery3.png" style="width:100%">
+      </div>
+      
+      <div class="mySlides">
+        <img src="assets/img/gallery1.png" style="width:100%">
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+    </div>
+  </div>
+
+    <!-- MODAL -->
+
+    <div id="myModal1" class="modal">
+      <span class="close cursor" onclick="closeModal1()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides1">
+          <img src="assets/img/Planos/planos-1.jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides1">
+          <img src="assets/img/Planos/planos-1.jpg" style="width:100%">
+        </div>
+        
+        <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides1(1)">&#10095;</a>
+  
+  
+      </div>
+    </div>
+  
   <script src="assets/js/jquery.min.js"></script>
   <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/slick.min.js"></script>

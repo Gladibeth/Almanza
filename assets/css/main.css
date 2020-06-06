@@ -179,7 +179,7 @@ section {
 
 /****** SCROLL *****/
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
   background-color: #fff !important;
@@ -188,7 +188,7 @@ section {
 ::-webkit-scrollbar-thumb {
   border-radius: 5px;
   background: #9E9E9E;
-}
+} */
 
 /****** BTNS *****/
 .btn_custom {
@@ -208,29 +208,32 @@ section {
   transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
   padding: 13px 50px;
   cursor: pointer;
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: 'Poppins';
 }
 
 .btn--small {
   min-width: 65px;
-  font-size: 12px;
+  font-size: 18px;
   height: 41px;
   border-radius: 3px;
   display: flex;
   justify-content: center;
+  line-height: 10px;
+  font-weight: bold;
 }
 
 .btn--medium {
-  padding: 12px 20px 12px 20px;
+  padding: 8px 50px 8px 50px;
   min-width: 85px;
-  font-size: 14px;
+  font-size: 20px;
 }
 
 .btn--large {
-  padding: 12px 55px 12px 20px;
+  padding: 12px 20px 12px 20px;
   min-width: 105px;
-  font-size: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
 }
 
 .btn--filled {
@@ -242,6 +245,7 @@ section {
     /* width: 380px; */
     /* height: 40px; */
     border: solid 1px #ffffff;
+    border-radius: 0px;
 }
 
 .btn--filled:hover {
@@ -268,9 +272,9 @@ section {
 }
 
 .btn--filledTransparent {
-  color: #474747;
+  color: #205250;
   background-color: transparent;
-  border: 1px solid #474747;
+  border: 1px solid #205250;
   transition: 0.3s ease-in-out;
   text-decoration: none;
 }
@@ -279,8 +283,8 @@ section {
   text-decoration: none;
   transition: 0.3s ease-in-out;
   color: #fff;
-  border: 1px solid #a6b100;
-  background-color: #a6b100;
+  border: 1px solid #205250;
+  background-color: #205250;
 }
 
 .arrowsline{
@@ -379,9 +383,10 @@ button:focus {
   color: #161616;
   transition: 0.3s ease-in-out;
   font-weight: 600;
-  font-size: 13px;
+  font-size: 12px;
   text-transform: uppercase;
   font-family: 'Poppins', sans-serif;
+  letter-spacing: 3px;
 }
 
 .nav-item.active .nav-link{
@@ -440,7 +445,7 @@ button:focus {
 .main-banner {
   position: relative;
   overflow: hidden;
-  margin-top: -80px;
+  margin-top: -50px;
 }
 .main-banner.banner-huincha{
   margin-top: -20px;
@@ -464,7 +469,7 @@ button:focus {
   width: 100%;
   height: 100%;
   padding-left: 5rem;
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 .main-banner .mask .main-banner__text.content-center{
@@ -478,9 +483,22 @@ button:focus {
   align-items: center;
 }
 
+.main-banner__title{
+  position: relative;
+}
+.main-banner__title:after {
+  position: absolute;
+  content: '';
+  width: 3.5rem;
+  height: 1px;
+  background-color: #fff;
+  bottom: -1.5rem;
+  left: 0rem;
+}
+
 .main-banner__title h1, .main-banner__title span{
   font-family: Poppins;
-  font-size: 45px;
+  font-size: 50px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -490,20 +508,40 @@ button:focus {
   margin-bottom: 0;
 }
 .main-banner__title span{
-  font-size: 21px;
+  font-size: 22px;
   font-weight: 300;
   letter-spacing: 12.5px;
 }
 
+
+
+
 .main-banner__dates{
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
+  margin-top: 0rem;
+  width: 60%;
+}
+.main-banner__dates--first{
+  margin-top: 3.7rem;
+}
+.main-banner__dates--two{
+  margin-top: 0.1rem;
+}
+.main-banner__dates:last-child{
+  margin-top: 1rem;
+}
+.main-banner__dates:last-child span{
+  font-size: 30px;
+}
+.main-banner__dates:last-child span strong{
+  font-size: 34px;
+  font-weight: 500;
 }
 .main-banner__dates span, .main-banner__dates strong,
 .main-banner__dates p{
   font-family: Poppins;
-  font-size: 23px;
+  font-size: 25px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -513,19 +551,21 @@ button:focus {
 }
 .main-banner__dates span{
   font-weight: 200;
+  font-size: 25px;
 }
-
 .main-banner__dates p{
   text-transform: uppercase;
-  width: 50%;
 }
 .main-banner__dates strong{
-  font-weight: 700;
+  font-weight: 500;
+}
+.main-banner__dates--first strong{
+  font-weight: 800 !important;
 }
 .main-banner__value{
   font-family: Poppins;
-  font-size: 18px !important;
-  font-weight: normal;
+  font-size: 20px !important;
+  font-weight: 400 !important;
   font-stretch: normal;
   font-style: italic !important;
   line-height: normal;
@@ -627,7 +667,7 @@ button:focus {
 
 .main-title__general p{
   font-family: Poppins;
-  font-size: 35px;
+  font-size: 40px;
   font-weight: 300;
   font-stretch: normal;
   font-style: normal;
@@ -637,7 +677,7 @@ button:focus {
   text-transform: uppercase;
 }
 .main-title__general p strong{
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .main-description__general p{
@@ -706,13 +746,14 @@ button:focus {
 }
 .main-oneform__item form{
   display: grid;
-  grid-template-columns: 35% 60%;
+  grid-template-columns: 35% 50%;
   grid-gap: 1rem;
 }
 
 .main-oneform__item:nth-child(1){
   display: flex;
   align-items: center;
+  padding-left: 3rem;
 }
 .main-oneform__text{
   font-size: 12px !important;
@@ -742,7 +783,7 @@ input[type="number"],select, textarea {
   margin: 0px;
   height: 40px;
   padding: 0px 10px;
-  border-radius: 3px;
+  border-radius: 0px;
   outline: none;
   border: none;
   background: #fff;
@@ -800,6 +841,7 @@ select option{
 /* DETAILS*/
 .main-details{
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 .main-details__content{
   display: grid;
@@ -808,6 +850,7 @@ select option{
 .main-details__item:nth-child(2){
   display: grid;
   grid-template-columns: repeat(4,1fr);
+  margin-top: 1rem;
 }
 .main-details__box{
   display: grid;
@@ -821,7 +864,7 @@ select option{
   text-transform: uppercase;
 }
 .main-details__description p{
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.47;
   letter-spacing: 0.04px;
   color: #474747;
@@ -854,12 +897,14 @@ select option{
 }
 .main-about__content{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns:45% 55%;
 }
 .main-about__img img{
   width: 100%;
 }
-
+.main-about__item:nth-child(1){
+  padding-top: 2rem;
+}
 .main-about__item:nth-child(2){
   display: flex;
   flex-direction: column;
@@ -883,6 +928,7 @@ select option{
   line-height: normal;
   letter-spacing: normal;
   color: #474747;
+  margin-top: 2rem;
 }
 .section-detalle{
     background-color:#f5f5f5;
@@ -915,8 +961,13 @@ select option{
 .main-gallery__content .slick-next {
   left: 3rem;
   opacity: 0.5;
+  transition: 0.3s ease-in-out;
 }
 
+.main-gallery__content .slick-next:hover{
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
 .main-gallery__content .slick-prev:before,.main-gallery__content .slick-next:before {
   font-family: "FontAwesome";
   font-size: 20px;
@@ -953,22 +1004,32 @@ select option{
 .main-zone__content{
   display: grid;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 4rem;
 }
 .main-zone__item:nth-child(1){
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.main-zone__item:nth-child(2){
+  padding-top: 3rem;
+}
 .main-zone__list{
   display: flex;
   align-items: center;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
+.main-zone__list--first{
+  margin-top: 1rem;
+}
+
 .main-zone__list .main-zone__listimg{
   margin-right: 0.5rem;
 }
 .main-zone__list .main-zone__description p {
   margin-bottom: 0;
+  color: #474747;
+  font-size: 17px;
 }
 .main-zone__img{
   padding-top: 3rem;
@@ -993,11 +1054,18 @@ select option{
 .main-twoform__content{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 2rem;
+  grid-gap: 4rem;
 }
 
+.main-twoform__item:nth-child(2){
+  display: flex;
+  align-items: center;
+}
+.main-twoform__item form{
+  width: 90%;
+}
 .main-twoform__img{
-  height: 500px;
+  height: 680px;
 }
 .main-twoform__img img{
   height: 100%;
@@ -1006,6 +1074,9 @@ select option{
 }
 .main-slidernav__img img{
   width: 100%;
+}
+.main-slidernav__boxcontent {
+  outline: none;
 }
 .position-form-relative{
   position: relative;
@@ -1082,11 +1153,15 @@ ul.menu{
 .menu-title{
   font-weight: 600;
   text-transform: uppercase;
-  color: #474747;
+  color: #205250
 }
 .main-footer__item dt{
-  color: #474747;
+  color: #205250;
   font-weight: 600;
+}
+
+.main-footer__item ul li:nth-child(2){
+  margin-top: 1rem;
 }
 ul.menu li a,dd a{
   font-family: Poppins;
@@ -1096,12 +1171,12 @@ ul.menu li a,dd a{
   font-style: normal;
   line-height: 1.81;
   letter-spacing: 0.05px;
-  color: #474747;
+  color: #205250
 }
 
 ul.menu li a:hover, dd a:hover{
   text-decoration: none;
-  color: #474747;
+  color: #205250
 }
 
 .main-footer__copy{
@@ -1111,6 +1186,9 @@ ul.menu li a:hover, dd a:hover{
   width: 100%;
   justify-content: center;
   margin-top: 3rem;
+}
+.main-contact__btnbox{
+  margin-top: 2rem;
 }
 
 .main-footer__copy a{
@@ -1182,14 +1260,12 @@ ul.menu li a:hover, dd a:hover{
   line-height: normal;
   letter-spacing: normal;
 }
-.slider-for .slick-dots li:nth-child(1):after {
-  content: 'Urbanismo';
-}
 
-.slider-for .slick-dots li:nth-child(2):after {
+
+.slider-for .slick-dots li:nth-child(1):after {
   content: 'Casa piso 1';
 }
-.slider-for .slick-dots li:nth-child(3):after {
+.slider-for .slick-dots li:nth-child(2):after {
   content: 'Casa 2 Niveles';
 }
 
@@ -1265,4 +1341,241 @@ ul.menu li a:hover, dd a:hover{
 }
 .slider.slider-nav .slick-next:before {
   content: "\f061";
+}
+
+.main-gallery__img{
+  position: relative;
+}
+.main-gallery__img:before {
+  content: '\f00e';
+  position: absolute;
+  font-size: 20px;
+  font-family: 'FontAwesome';
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  color: rgba(0, 0, 0, 0.7);
+  transition: 0.3s ease-in-out;
+  background-color: #fff;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  z-index: 99;
+}
+
+.main-gallery__img:hover:before {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.main-gallery__img:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-right: 1rem;
+  width: 96%;
+  background-color: rgba(0, 0, 0, 0.1);
+  z-index: 8;
+}
+.main-gallery__img:hover:after {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+}
+
+.main-slidernav__img{
+  position: relative;
+}
+.main-slidernav__img:after {
+  content: '\f00e';
+  position: absolute;
+  font-size: 20px;
+  font-family: 'FontAwesome';
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%);
+  opacity: 0;
+  color: rgba(0, 0, 0, 0.7);
+  transition: 0.3s ease-in-out;
+  background-color: #fff;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  z-index: 9;
+}
+
+.main-slidernav__img:hover:after {
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+
+/* The Modal (background) */
+.modal {
+	display: none;
+	position: fixed;
+	/* z-index: 1; */
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Modal Content */
+.modal-content {
+	position: relative;
+	background-color: #fefefe;
+	margin: auto;
+	padding: 0;
+	width: 90%;
+	max-width: 1200px;
+}
+
+/* The Close Button */
+#myModal .close ,#myModal1 .close {
+	color: white !important;
+    position: absolute;
+    top: 6rem;
+    right: 7rem;
+    font-size: 35px;
+    font-weight: bold;
+    opacity: 1 !important;
+    z-index: 999;
+}
+
+.close:hover,
+.close:focus {
+	color: #999;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.mySlides, .mySlides1, .mySlides2 {
+	display: none;
+	height: 75vh;
+}
+.mySlides img, .mySlides1 img,.mySlides2 img{
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+.cursor {
+	cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+	cursor: pointer;
+	position: absolute;
+	top: 20rem;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white !important;
+	font-weight: bold;
+	font-size: 20px;
+	transition: 0.6s ease;
+	border-radius: 0px !important;
+	user-select: none;
+	-webkit-user-select: none;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0rem;
+	border-radius: 3px 0 0 3px;
+}
+.prev{
+	left: 0rem;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+img {
+	margin-bottom: -4px;
+}
+
+.caption-container {
+	text-align: center;
+	background-color: black;
+	padding: 2px 16px;
+	color: white;
+}
+
+.demo {
+	opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+	opacity: 1;
+}
+
+img.hover-shadow {
+	transition: 0.3s;
+}
+
+.hover-shadow:hover {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#myModal .modal-content, #myModal1 .modal-content,#myModal2 .modal-content{
+	width: 100%;
+	overflow: hidden;
+	background-color: transparent;
+	border: none;
+}
+
+#myModal .modal-content .close, #myModal1 .modal-content .close, #myModal2 .modal-content .close{
+	color: white;
+	position: absolute;
+	top: 0rem;
+    right: 0rem;
+	font-size: 30px;
+	font-weight: bold;
+	background-color: rgba(0,0,0,0.5) !important;
+	padding: 5px !important;
+	opacity: 1;
+	z-index: 999;
+}
+
+#myModal, #myModal1, #myModal2{
+	background-color: rgba(0, 0, 0, 0.9)
+}
+
+
+.mySlides .main-details__slick--img,.mySlides1 .main-details__slick--img, .mySlides2 .main-details__slick--img, .mySlides3 .main-details__slick--img{
+	/* height: 500px !important; */
+	height: 75vh !important;
+}
+
+.main-urbanismos__grados strong{
+  color: #000;
+  font-size: 20px;
+}
+.main-zone__item .main-description__general{
+  margin-top: 2rem;
 }
