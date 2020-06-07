@@ -495,7 +495,7 @@ button:focus {
   width: 3.5rem;
   height: 1px;
   background-color: #fff;
-  bottom: -1.5rem;
+  bottom: -1.8rem;
   left: 0rem;
 }
 
@@ -511,7 +511,7 @@ button:focus {
   margin-bottom: 0;
 }
 .main-banner__title span{
-  font-size: 22px;
+  font-size: 23px;
   font-weight: 300;
   letter-spacing: 12.5px;
 }
@@ -900,7 +900,7 @@ select option{
 }
 .main-about__content{
   display: grid;
-  grid-template-columns:45% 55%;
+  grid-template-columns:42% 58%;
 }
 .main-about__img img{
   width: 100%;
@@ -921,8 +921,6 @@ select option{
 }
 
 .Almanza-de-Llanogran {
-  width: 497px;
-  height: 158px;
   font-family: Poppins;
   font-size: 18px;
   font-weight: normal;
@@ -1007,7 +1005,7 @@ select option{
 .main-zone__content{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 4rem;
+  /* grid-gap: 4rem; */
 }
 .main-zone__item:nth-child(1){
   display: flex;
@@ -1034,6 +1032,11 @@ select option{
   color: #474747;
   font-size: 17px;
 }
+.main-zone__list .main-zone__description p strong {
+  font-weight: 500;
+  color: #474747;
+  font-size: 17px;
+}
 .main-zone__img{
   padding-top: 3rem;
 }
@@ -1050,6 +1053,16 @@ select option{
   padding-top: 1rem;
 }
 
+
+.main-zone.urbanismo{
+  padding-top: 80px;
+}
+.main-zone.urbanismo .main-zone__content{
+  grid-gap: 4rem;
+}
+.main-zone.urbanismo .main-description__general{
+  width: 80%;
+}
 /*TWO FORM*/
 .main-twoform{
   padding-top: 80px;
@@ -1205,7 +1218,17 @@ ul.menu li a:hover, dd a:hover{
 .main-maps{
   padding-top: 0px;
   padding-bottom: 100px;
-
+  position: relative;
+}
+.main-maps img.mask__maps{
+  position: absolute;
+  right: 0rem;
+  width: 100%;
+  object-fit: contain;
+  height: 20rem;
+  z-index: -1;
+  top: -5rem;
+  opacity: 0.8;
 }
 
 .slider.slider-for .slick-dots li.slick-active{
@@ -1213,12 +1236,9 @@ ul.menu li a:hover, dd a:hover{
   width: 162px;
   height: 56px;
   border: 1px solid  #205250;
-;
-  border-radius: 0;
   background-color:  #205250;
-;
-  position: relative;
-  border-radius: 3px;
+  position: relative;  
+  border-radius: 0;
   font-size: 14px;
 }
 .slider.slider-for .slick-dots{
@@ -1235,7 +1255,7 @@ ul.menu li a:hover, dd a:hover{
   background-color: transparent;
   position: relative;
   font-size: 14px;
-  border-radius: 3px;
+  border-radius: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
