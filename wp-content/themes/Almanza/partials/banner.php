@@ -1,5 +1,10 @@
       <div class="main-banner" id="home">
         <div class="main-banner__content">
+             <?php $args = array( 'post_type' => 'Banner', 'posts_per_page' => 6);
+                  
+                ?>   
+                <?php $loop = new WP_Query( $args ); ?>
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
           <div class="main-banner__item">
             <div class="mask mask-light">
               <div class="main-banner__text">
@@ -27,11 +32,13 @@
               </div>
             </div>
             <div class="main-banner__img">
-              <img src="<?php echo get_template_directory_uri();?>/assets/img/image.png">
+              <img src="<?php echo get_the_post_thumbnail_url(); ?>">
             </div>
           </div>
+        <?php endwhile; ?>
         </div>
       </div>
+
       <div class="main-oneform">
         
         <div class="container-fluid p-0">
