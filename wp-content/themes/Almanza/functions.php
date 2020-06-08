@@ -199,6 +199,63 @@ function Planos() {
 add_action( 'init', 'Planos', 0 );
 
 
+// Register Custom Banner Home
+function detalles() {
+
+	$labels = array(
+		'name'                  => _x( 'Detalles del proyecto', 'Post Type General Name', 'nivel' ),
+		'singular_name'         => _x( 'Detalles del proyecto', 'Post Type Singular Name', 'nivel' ),
+		'menu_name'             => __( 'Detalles del proyecto', 'nivel' ),
+		'name_admin_bar'        => __( 'Detalles del proyecto', 'nivel' ),
+		'archives'              => __( 'Archivo', 'nivel' ),
+		'attributes'            => __( 'Atributos', 'nivel' ),
+		'parent_item_colon'     => __( 'Artículo principal', 'nivel' ),
+		'all_items'             => __( 'Todos los artículos', 'nivel' ),
+		'add_new_item'          => __( 'Agregar ítem nuevo', 'nivel' ),
+		'add_new'               => __( 'Añadir nuevo', 'nivel' ),
+		'new_item'              => __( 'Nuevo artículo', 'nivel' ),
+		'edit_item'             => __( 'Editar elemento', 'nivel' ),
+		'update_item'           => __( 'Actualizar artículo', 'nivel' ),
+		'view_item'             => __( 'Ver ítem', 'nivel' ),
+		'view_items'            => __( 'Ver artículos', 'nivel' ),
+		'search_items'          => __( 'Buscar artículo', 'nivel' ),
+		'not_found'             => __( 'Extraviado', 'nivel' ),
+		'not_found_in_trash'    => __( 'No se encuentra en la basura', 'nivel' ),
+		'featured_image'        => __( 'Foto principal', 'nivel' ),
+		'set_featured_image'    => __( 'Establecer imagen destacada', 'nivel' ),
+		'remove_featured_image' => __( 'Remove featured image', 'nivel' ),
+		'use_featured_image'    => __( 'Usar como imagen destacada', 'nivel' ),
+		'insert_into_item'      => __( 'Insertar en el elemento', 'nivel' ),
+		'uploaded_to_this_item' => __( 'Subido a este artículo', 'nivel' ),
+		'items_list'            => __( 'Lista de artículos', 'nivel' ),
+		'items_list_navigation' => __( 'Lista de elementos de navegación', 'nivel' ),
+		'filter_items_list'     => __( 'Lista de elementos de filtro', 'nivel' ),
+	);
+	$args = array(
+		'label'                 => __( 'detalles', 'nivel' ),
+		'description'           => __( 'Post Type Description', 'nivel' ),
+		'labels'                => $labels,
+		'supports'              => array( 'title', 'thumbnail', 'editor' ),
+		'taxonomies'            => array(  ),
+		'hierarchical'          => false,
+		'public'                => true,
+		'show_ui'               => true,
+		'show_in_menu'          => true,
+		'menu_position'         => 5,
+		'menu_icon'             => 'dashicons-list-view',
+		'show_in_admin_bar'     => true,
+		'show_in_nav_menus'     => true,
+		'can_export'            => true,
+		'has_archive'           => true,
+		'exclude_from_search'   => false,
+		'publicly_queryable'    => true,
+		'capability_type'       => 'page',
+	);
+	register_post_type( 'detalles', $args );
+
+}
+add_action( 'init', 'detalles', 0 );
+
 
 
 
