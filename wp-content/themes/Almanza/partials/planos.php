@@ -9,195 +9,137 @@
         <div class="container-fluid">
           <div class="main">
             <div class="slider slider-for">
-              <div><h3></h3></div>
-              <div><h3></h3></div>
+
+                 <?php $args = array( 'post_type' => 'planos');
+                    $planosCount2 = 1;
+                ?>   
+                <?php $loop = new WP_Query( $args ); ?>
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+              <div>
+                <style type="text/css">
+                .slider-for .slick-dots li:nth-child(<?php echo $planosCount2; ?>):after {
+                 content: '<?php the_field('niveles'); ?>';
+                    }
+              </style>
+            </div>
+                    <?php $planosCount2++; endwhile; ?>
+           
+
             </div>
             <div class="slider slider-nav">
+
+
+                  <?php $args = array( 'post_type' => 'planos');
+                    $galeriaCount2 = 1;
+                ?>   
+                <?php $loop = new WP_Query( $args ); ?>
+                <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
               <div class="main-slidernav__boxcontent">
                 <div class="main-slidernav__content">
                   <div class="main-slidernav__item">
                     <div class="main-slidernav__img" onclick="openModal1();currentSlide1(1)">
-                      <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/planos-1.jpg" alt="">
+                      <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
                     </div>
                   </div>
                   <div class="main-slidernav__item">
+                    <?php if (get_field('detalle_1')): ?>
                       <div class="main-zone__list">
                         <div class="main-zone__listimg">
                           <img src="<?php echo get_template_directory_uri();?>/assets/img/icon.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p><strong>Casa de 69.82 m² piso 1</strong></p>
+                          <p><strong><?php the_field('detalle_1'); ?></strong></p>
                         </div>
                       </div>
-                      <div class="main-zone__list">
+                    <?php endif; ?>
+
+                          <?php if (get_field('detalle_2')): ?>
+                            <div class="main-zone__list">
                         <div class="main-zone__listimg">
                           <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-1.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>Cocina abierta a zona social</p>
+                          <p><?php the_field('detalle_2'); ?></p>
                         </div>
-                      </div>
-                      <div class="main-zone__list">
+                      </div> <?php endif;?>
+                          <?php if (get_field('detalle_3')): ?>
+                            <div class="main-zone__list">
                         <div class="main-zone__listimg">
                           <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-2.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>Centro de lavado independiente</p>
+                          <p><?php the_field('detalle_3'); ?></p>
                         </div>
-                      </div>
-                      <div class="main-zone__list">
+                      </div> <?php endif;?>
+                          <?php if (get_field('detalle_4')): ?>
+                            <div class="main-zone__list">
                         <div class="main-zone__listimg">
                           <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-3.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>Baño auxiliar/social</p>
+                          <p><?php the_field('detalle_4'); ?></p>
                         </div>
-                      </div>
-                      <div class="main-zone__list">
+                      </div> <?php endif;?>
+                          <?php if (get_field('detalle_5')): ?>
+                            <div class="main-zone__list">
                         <div class="main-zone__listimg">
                           <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-4.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>Zona verde</p>
+                          <p><?php the_field('detalle_5'); ?></p>
                         </div>
-                      </div>
-                      <div class="main-zone__list">
+                      </div> <?php endif;?>
+                          <?php if (get_field('detalle_6')): ?>
+                            <div class="main-zone__list">
                         <div class="main-zone__listimg">
                           <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-5.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>Estudio</p>
+                          <p><?php the_field('detalle_6'); ?></p>
                         </div>
-                      </div>
-                         <div class="main-zone__list">
+                      </div> <?php endif;?>
+                             <?php if (get_field('detalle_7')): ?>
+                              <div class="main-zone__list">
                         <div class="main-zone__listimg">
                           <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-5.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>Parqueadero doble</p>
+                          <p><?php the_field('detalle_7'); ?></p>
                         </div>
-                      </div>
-                         <div class="main-zone__list">
+                      </div> <?php endif;?>
+                             <?php if (get_field('detalle_8')): ?>
+                              <div class="main-zone__list">
                         <div class="main-zone__listimg">
                           <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-5.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>Alcoba con vestier/alcoba 2 y 3</p>
+                          <p><?php the_field('detalle_8'); ?></p>
                         </div>
-                      </div>
-                         <div class="main-zone__list">
+                      </div> <?php endif;?>
+                             <?php if (get_field('detalle_9')): ?>
+                              <div class="main-zone__list">
                         <div class="main-zone__listimg">
                           <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-5.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>Closet de linos</p>
+                          <p><?php the_field('detalle_9'); ?></p>
                         </div>
-                      </div>
-                         <div class="main-zone__list">
+                      </div> <?php endif;?>
+                             <?php if (get_field('detalle_10')): ?>
+                              <div class="main-zone__list">
                         <div class="main-zone__listimg">
                           <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-5.png" alt="">
                         </div>
                         <div class="main-zone__description">
-                          <p>Alcoba principal con baño privado y vestier</p>
+                          <p><?php the_field('detalle_10'); ?></p>
                         </div>
-                      </div>
+                      </div> <?php endif;?>
                          
                   </div>
                 </div>
               </div>
-              <div class="main-slidernav__boxcontent">
-                <div class="main-slidernav__content">
-                  <div class="main-slidernav__item">
-                    <div class="main-slidernav__img" onclick="openModal1();currentSlide1(2)">
-                      <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/planos-1.jpg" alt="">
-                    </div>
-                  </div>
-                  <div class="main-slidernav__item">
-                      <div class="main-zone__list">
-                        <div class="main-zone__listimg">
-                          <img src="<?php echo get_template_directory_uri();?>/assets/img/icon.png" alt="">
-                        </div>
-                        <div class="main-zone__description">
-                          <p><strong>Casa de 129.39 m² 2 pisos</strong></p>
-                        </div>
-                      </div>
-                      <div class="main-zone__list">
-                        <div class="main-zone__listimg">
-                          <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-1.png" alt="">
-                        </div>
-                        <div class="main-zone__description">
-                          <p>Cocina abierta a zona social</p>
-                        </div>
-                      </div>
-                      <div class="main-zone__list">
-                        <div class="main-zone__listimg">
-                          <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-2.png" alt="">
-                        </div>
-                        <div class="main-zone__description">
-                          <p>Centro de lavado independiente</p>
-                        </div>
-                      </div>
-                      <div class="main-zone__list">
-                        <div class="main-zone__listimg">
-                          <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-3.png" alt="">
-                        </div>
-                        <div class="main-zone__description">
-                          <p>Baño auxiliar/social</p>
-                        </div>
-                      </div>
-                      <div class="main-zone__list">
-                        <div class="main-zone__listimg">
-                          <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-4.png" alt="">
-                        </div>
-                        <div class="main-zone__description">
-                          <p>Zona verde</p>
-                        </div>
-                      </div>
-                      <div class="main-zone__list">
-                        <div class="main-zone__listimg">
-                          <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-5.png" alt="">
-                        </div>
-                        <div class="main-zone__description">
-                          <p>Estudio</p>
-                        </div>
-                      </div>
-                         <div class="main-zone__list">
-                        <div class="main-zone__listimg">
-                          <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-5.png" alt="">
-                        </div>
-                        <div class="main-zone__description">
-                          <p>Parqueadero doble</p>
-                        </div>
-                      </div>
-                         <div class="main-zone__list">
-                        <div class="main-zone__listimg">
-                          <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-5.png" alt="">
-                        </div>
-                        <div class="main-zone__description">
-                          <p>Alcoba con vestier/alcoba 2 y 3</p>
-                        </div>
-                      </div>
-                         <div class="main-zone__list">
-                        <div class="main-zone__listimg">
-                          <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-5.png" alt="">
-                        </div>
-                        <div class="main-zone__description">
-                          <p>Closet de linos</p>
-                        </div>
-                      </div>
-                         <div class="main-zone__list">
-                        <div class="main-zone__listimg">
-                          <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/icon-5.png" alt="">
-                        </div>
-                        <div class="main-zone__description">
-                          <p>Alcoba principal con baño privado y vestier</p>
-                        </div>
-                      </div>
-                         
-                  </div>
-                </div>
-              </div>
-                   
+
+                <?php endwhile; ?>                   
             </div>
           </div>
         </div>

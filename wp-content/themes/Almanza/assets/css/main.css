@@ -1285,12 +1285,7 @@ ul.menu li a:hover, dd a:hover{
 }
 
 
-.slider-for .slick-dots li:nth-child(1):after {
-  content: 'Casa piso 1';
-}
-.slider-for .slick-dots li:nth-child(2):after {
-  content: 'Casa 2 Niveles';
-}
+
 
 
 .slider-for .slick-dots li.slick-active:nth-child(1):after,
