@@ -1,9 +1,9 @@
 <?php $args = array( 'post_type' => 'urbanismo', 'posts_per_page' => 1);?>   
 <?php $loop = new WP_Query( $args ); ?>
 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-<section class="main-zone urbanismo">
+<section class="main-zone urbanismo" id="urbanismo">
   <div class="container-fluid">
-    <div class="main-title__general">
+    <div class="main-title__general main-title__general--medium">
       <p>
         
         <strong>Urbanismo</strong>

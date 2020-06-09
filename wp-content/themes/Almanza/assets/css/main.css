@@ -229,7 +229,7 @@ section {
 .btn--medium {
   padding: 8px 50px 8px 50px;
   min-width: 85px;
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .btn--large {
@@ -264,6 +264,7 @@ section {
   border: 1px solid transparent;
   transition: 0.3s ease-in-out;
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 .btn--filledLight:hover {
@@ -535,7 +536,7 @@ a.angle__down i{
   display: flex;
   flex-direction: column;
   margin-top: 0rem;
-  width: 60%;
+  width: 55%;
 }
 .main-banner__dates--first{
   margin-top: 3.7rem;
@@ -550,7 +551,7 @@ a.angle__down i{
   font-size: 30px;
 }
 .main-banner__dates:last-child span strong{
-  font-size: 34px;
+  font-size: 35px;
   font-weight: 500;
 }
 .main-banner__dates span, .main-banner__dates strong,
@@ -570,6 +571,8 @@ a.angle__down i{
 }
 .main-banner__dates p{
   text-transform: uppercase;
+  line-height: 35px;
+  font-size: 25px;
 }
 .main-banner__dates strong{
   font-weight: 500;
@@ -691,6 +694,9 @@ a.angle__down i{
   color: #000000;
   text-transform: uppercase;
 }
+.main-title__general .main-title__general--medium p{
+  font-size: 43px;
+}
 .main-title__general p strong{
   font-weight: 700;
 }
@@ -777,14 +783,14 @@ a.angle__down i{
   color: #fff;
 }
 .main-oneform__text.main-oneform__textDark{
-  color: #474747;
+  color: #205250;
 }
 .main-oneform__text a{
   text-decoration: underline;
   color: #fff;
 }
 .main-oneform__text.main-oneform__textDark a{
-  color: #474747;
+  color: #205250;
 }
 
 /*INPUTS*/
@@ -869,8 +875,8 @@ select option{
 }
 .main-details__box{
   display: grid;
-  grid-template-columns: 15% 80%;
-  grid-gap: 0.5rem;
+  grid-template-columns: 15% 85%;
+  /* grid-gap: 0.5rem; */
 }
 .main-details__title p{
   font-size: 15px;
@@ -934,10 +940,10 @@ select option{
 .mask__img__nerby{
   position: absolute;
   width: 100%;
-  height: 19rem;
+  height: 24rem;
   bottom: -4rem;
   object-fit: contain;
-  left: -4rem;
+  left: 0rem;
   z-index: -1;
 }
 
@@ -1055,10 +1061,10 @@ select option{
 
 .mask__img__zone{
   position: absolute;
-  width: 70%;
-  height: 19rem;
+  width: 85%;
+  height: 22rem;
   bottom: -4rem;
-  right: 1rem;
+  right: -0.5rem;
   z-index: -2;
 }
 .main-zone__list{
@@ -1085,9 +1091,13 @@ select option{
 }
 .main-zone__img{
   padding-top: 3rem;
+  height: 520px;
 }
 .main-zone__img img{
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right;
 }
 
 /*LOCATION*/
@@ -1108,12 +1118,17 @@ select option{
   padding-bottom: 0;
 
 }
+.main-zone.urbanismo .main-zone__img{
+  padding-top: 1rem;
+}
 .main-zone.urbanismo .main-description__general{
   width: 80%;
 }
 /*TWO FORM*/
 .main-twoform{
-  padding-top: 80px;
+  padding-top: 0px;
+  padding-bottom: 0;
+  background-color: #fafafa;
 }
 .main-twoform__content{
   display: grid;
@@ -1186,7 +1201,7 @@ select option{
 .main-twoform label{
   font-size: 15px;
   letter-spacing: 0.52px;
-  color: #474747;
+  color: #205250;
 }
 
 
@@ -1197,7 +1212,7 @@ footer{
 }
 .main-footer__content{
   display:grid;
-  grid-template-columns: 40% 30% 30%;
+  grid-template-columns: 40% 25% 30%;
   grid-gap: 2rem;
 }
 .main-footer__description{

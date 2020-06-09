@@ -38,11 +38,15 @@
                   <a class='scroll-link' href='#planos-proyecto'>Planos del proyecto</a>
                 </li>
                 <li>
+                  <a class='scroll-link' href='#urbanismo'>Urbanismo</a>
+                </li>
+                <li>
                   <a class='scroll-link' href='#ubicacion'>Ubicación</a>
                 </li>
                 <li>
                   <a class='scroll-link' href='#contacto'>Formulario</a>
                 </li>
+                
               </ul>
             </div>
     
@@ -55,7 +59,7 @@
                 <dd><a target="_blank" href=""> +500 vía Barro Blanco - La Amalita.</a></dd>
                 <dt>Teléfono</dt>
                 <dd>
-                  <a target="_blank" href='tel:575539634'>+ + 57 5539634</a>
+                  <a target="_blank" href='tel:575539634'>+ 57 5539634</a>
                 </dd>
                 <dt>Celular</dt>
                 <dd>
