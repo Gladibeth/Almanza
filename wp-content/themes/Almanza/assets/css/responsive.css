@@ -238,8 +238,7 @@
   }
   .main-oneform__content{
     grid-template-columns: 25% 76%;
-    padding: 0rem 0rem 0rem 2rem;
-  
+    padding: 2rem 0rem 2rem 0rem;
   }
   .main-details__content{
     grid-template-columns: 1fr;
@@ -376,7 +375,12 @@
     object-fit: cover;
     height: 20rem;
   }
-  
+  .main-banner .mask .main-banner__text{
+    padding-top: 2rem;
+  }
+  .main-banner__dates{
+    width: 90%;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .container-fluid {
