@@ -211,7 +211,7 @@ section {
   transition: color .2s ease-in-out, background-color .2s ease-in-out, border-color .2s ease-in-out;
   padding: 13px 50px;
   cursor: pointer;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-family: 'Poppins';
 }
 
@@ -445,6 +445,18 @@ button:focus {
 
 
 /****** BANNER *****/
+a.angle__down{
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  background-color: rgba(0, 0, 0, 0.85);
+}
+a.angle__down i{
+  color: #fff;
+  font-size: 20px;
+}
 .main-banner {
   position: relative;
   overflow: hidden;
