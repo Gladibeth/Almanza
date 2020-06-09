@@ -36,13 +36,14 @@
             </div>
           </div>
         <?php endwhile; ?>
-        </div>
+      </div>
+      <div  id="contacto-proyecto"></div>
         <a class="angle__down" href="#contacto-proyecto">
           <i class="fa fa-angle-down" aria-hidden="true"></i>
         </a>
       </div>
 
-      <div class="main-oneform" id="contacto-proyecto">
+      <div class="main-oneform" >
         
         <div class="container-fluid p-0">
           <div class="main-oneform__content">

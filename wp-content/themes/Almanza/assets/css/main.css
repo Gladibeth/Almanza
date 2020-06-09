@@ -736,7 +736,7 @@ a.angle__down i{
   position: relative;
   background-color: #005051;
   width: 100%;
-  padding: 2rem 6rem 2rem 2rem;
+  padding: 3rem 6rem 2rem 2rem;
   display: grid;
   grid-template-columns: 35% 65%;
 }
