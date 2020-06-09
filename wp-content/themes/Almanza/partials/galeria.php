@@ -25,7 +25,7 @@
                 ?>   
                 <?php $loop = new WP_Query( $args ); ?>
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-              <div class="main-gallery__img" onclick="openModal();currentSlide(<?php echo $galeriaCoun2; ?>)">
+              <div class="main-gallery__img" onclick="openModal();currentSlide(<?php echo $galeriaCount2; ?>)">
                 <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
               </div>
               <?php $galeriaCount2++; endwhile; ?>
