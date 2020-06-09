@@ -83,14 +83,42 @@
    <div id="myModal" class="modal">
     <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="modal-content">
-    <?php $args = array( 'post_type' => 'galeria');
-      $countGalery = 1;?>   
+    <?php $args = array( 'post_type' => 'galeria', 'posts_per_page' => 6);
+      $galeriaCount = 1;?>   
     <?php $loop = new WP_Query( $args ); ?>
     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
       <div class="mySlides">
         <img src="<?php echo get_the_post_thumbnail_url(); ?>" style="width:100%">
       </div>
-    <?php $countGalery++; endwhile; ?>
+    <?php $galeriaCount++; endwhile; ?>
+
+    <?php $args = array( 'post_type' => 'galeria', 'posts_per_page' => 6);
+      $galeriaCount2 = 1;?>   
+    <?php $loop = new WP_Query( $args ); ?>
+    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+      <div class="mySlides">
+        <img src="<?php echo get_the_post_thumbnail_url(); ?>" style="width:100%">
+      </div>
+    <?php $galeriaCount2++; endwhile; ?>
+
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+
+    </div>
+  </div>
+  <div id="myModal" class="modal">
+    <span class="close cursor" onclick="closeModal()">&times;</span>
+    <div class="modal-content">
+  
+    <?php $args = array( 'post_type' => 'galeria', 'posts_per_page' => 6);
+      $galeriaCount2 = 1;?>   
+    <?php $loop = new WP_Query( $args ); ?>
+    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+      <div class="mySlides">
+        <img src="<?php echo get_the_post_thumbnail_url(); ?>" style="width:100%">
+      </div>
+    <?php $galeriaCount2++; endwhile; ?>
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
