@@ -1373,7 +1373,7 @@ ul.menu li a:hover, dd a:hover{
   margin-top: 2rem;
 }
 .slider.slider-nav .slick-dots{
-  bottom: -4rem;
+  bottom: 0rem;
   left: -15rem;
 }
 
