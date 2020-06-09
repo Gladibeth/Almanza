@@ -19,7 +19,7 @@
                 </div>
                 <div class="main-details__boxtext">
                   <div class="main-details__title">
-                    <?php the_title() ?>
+                    <p><?php the_title() ?></p>
                   </div>
                   <div class="main-details__description">
                     <p class="font-general"><?php the_excerpt(); ?></p>

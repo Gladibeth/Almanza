@@ -23,19 +23,19 @@
               <ul class='menu'>
                 <li class='menu-title'>MENÚ</li>
                 <li>
-                  <a class='scroll-link' href='#sabaneta'>Detalles del proyecto</a>
+                  <a class='scroll-link' href='#detalles-proyecto'>Detalles del proyecto</a>
                 </li>
                 <li>
-                  <a class='scroll-link' href='#ciudadela'>Acerca del proyecto</a>
+                  <a class='scroll-link' href='#acerca-proyecto'>Acerca del proyecto</a>
                 </li>
                 <li>
-                  <a class='scroll-link' href='#video'>Galería</a>
+                  <a class='scroll-link' href='#galeria-proyecto'>Galería</a>
                 </li>
                 <li>
-                  <a class='scroll-link' href='#proyectos'>Zonas comunes</a>
+                  <a class='scroll-link' href='#caracteristica-proyecto'>Zonas comunes</a>
                 </li>
                 <li>
-                  <a class='scroll-link' href='#proyectos'>Planos del proyecto</a>
+                  <a class='scroll-link' href='#planos-proyecto'>Planos del proyecto</a>
                 </li>
                 <li>
                   <a class='scroll-link' href='#ubicacion'>Ubicación</a>
@@ -62,7 +62,7 @@
                   <a target="_blank" href='tel:573134579977'>+ 57 3134579977</a>
                 </dd>
               </dl>
-              <a class='btn_custom btn--large btn--filledTransparent' target="_blank" href=''>Descargar Brochure</a>
+              <a class='btn_custom btn--large btn--filledTransparent' target="_blank"  href="<?php echo get_template_directory_uri();?>/assets/pdf/Presentacion-Almanza.pdf">Descargar Brochure</a>
             </div>
           </div>
           
@@ -79,23 +79,15 @@
    <div id="myModal" class="modal">
     <span class="close cursor" onclick="closeModal()">&times;</span>
     <div class="modal-content">
-  
+    <?php $args = array( 'post_type' => 'galeria');
+      $countGalery = 1;?>   
+    <?php $loop = new WP_Query( $args ); ?>
+    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
       <div class="mySlides">
-        <img src="<?php echo get_template_directory_uri();?>/assets/img/gallery1.png" style="width:100%">
+        <img src="<?php echo get_the_post_thumbnail_url(); ?>" style="width:100%">
       </div>
-  
-      <div class="mySlides">
-        <img src="<?php echo get_template_directory_uri();?>/assets/img/gallery2.png" style="width:100%">
-      </div>
-  
-      <div class="mySlides">
-        <img src="<?php echo get_template_directory_uri();?>/assets/img/gallery3.png" style="width:100%">
-      </div>
-      
-      <div class="mySlides">
-        <img src="<?php echo get_template_directory_uri();?>/assets/img/gallery1.png" style="width:100%">
-      </div>
-      
+    <?php $countGalery++; endwhile; ?>
+
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
 
@@ -108,14 +100,15 @@
     <div id="myModal1" class="modal">
       <span class="close cursor" onclick="closeModal1()">&times;</span>
       <div class="modal-content">
-    
+      <?php $args = array( 'post_type' => 'planos');
+        $countGalery2 = 1;?>   
+      <?php $loop = new WP_Query( $args ); ?>
+      <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
         <div class="mySlides1">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/planos-1.jpg" style="width:100%">
+          <img src="<?php echo get_the_post_thumbnail_url(); ?>" style="width:100%">
         </div>
+      <?php $countGalery2++; endwhile; ?>
         
-        <div class="mySlides1">
-          <img src="<?php echo get_template_directory_uri();?>/assets/img/Planos/planos-1.jpg" style="width:100%">
-        </div>
         
         <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides1(1)">&#10095;</a>
@@ -123,6 +116,7 @@
   
       </div>
     </div>
+  
   
   <script src="<?php echo get_template_directory_uri();?>/assets/js/jquery.min.js"></script>
   <script src="<?php echo get_template_directory_uri();?>/assets/js/bootstrap.min.js"></script>
