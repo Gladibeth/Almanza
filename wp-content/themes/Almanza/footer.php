@@ -104,13 +104,13 @@
       <span class="close cursor" onclick="closeModal1()">&times;</span>
       <div class="modal-content">
       <?php $args = array( 'post_type' => 'planos');
-        $countGalery2 = 1;?>   
+        $countGalery21 = 1;?>   
       <?php $loop = new WP_Query( $args ); ?>
       <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
         <div class="mySlides1">
           <img src="<?php echo get_the_post_thumbnail_url(); ?>" style="width:100%">
         </div>
-      <?php $countGalery2++; endwhile; ?>
+      <?php $countGalery21++; endwhile; ?>
         
         
         <a class="prev" onclick="plusSlides1(-1)">&#10094;</a>

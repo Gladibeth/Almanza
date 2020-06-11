@@ -37,7 +37,7 @@
               <div class="main-slidernav__boxcontent">
                 <div class="main-slidernav__content">
                   <div class="main-slidernav__item">
-                    <div class="main-slidernav__img" onclick="openModal1();currentSlide1(1)">
+                    <div class="main-slidernav__img" onclick="openModal1();currentSlide1(<?php echo  $galeriaCount2; ?>)">
                       <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
                     </div>
                   </div>
@@ -139,7 +139,7 @@
                 </div>
               </div>
 
-                <?php endwhile; ?>                   
+                <?php $galeriaCount2++; endwhile; ?>                   
             </div>
           </div>
         </div>
