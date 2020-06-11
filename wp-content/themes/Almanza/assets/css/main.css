@@ -1100,6 +1100,10 @@ select option{
   padding: 0 5rem 0 0rem;
   position: relative;
 }
+.main-zone.urbanismo .main-zone__item:nth-child(2){
+  padding: 0 0rem 0 0rem;
+  position: relative;
+}
 
 .mask__img__zone{
   position: absolute;
@@ -1354,6 +1358,7 @@ ul.menu li a:hover, dd a:hover{
 }
 .slider.slider-for .slick-dots{
   display: flex;
+  left: 16%;
 }
 
 .slider.slider-for .slick-dots li{
@@ -1456,11 +1461,11 @@ ul.menu li a:hover, dd a:hover{
   border-radius: 50%;
 }
 .slider.slider-nav .slick-prev{
-  left: -1rem;
+  left: 10rem;
 }
 
 .slider.slider-nav .slick-next {
-  right: 30.5rem;
+  right: 41.5rem;
 }
 .slider.slider-nav .slick-prev:before, .slider.slider-nav .slick-next:before{
   font-family: "FontAwesome";
@@ -1711,7 +1716,17 @@ img.hover-shadow {
 .main-zone__item .main-description__general{
   margin-top: 2rem;
 }
-
+.main-description__general div div{
+  font-family: Poppins;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #474747;
+  margin-top: 2rem;
+}
 a:hover {
   transition: 0.3s ease-in-out;
   text-decoration: none !important;

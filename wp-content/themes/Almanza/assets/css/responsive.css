@@ -1,4 +1,13 @@
 @media (min-width: 0px) and (max-width: 767px) {
+  .fixed-buttons .whatsapp, .fixed-buttons .js-gotop{
+    height: auto;
+    width: auto;
+  }
+
+  .slider.slider-for .slick-dots {
+    display: flex;
+    left: 0;
+  }
   .navbar-toggler{
     padding-right: 0px !important;
   }
@@ -55,10 +64,13 @@
     top: 8rem;
   }
   .slider.slider-nav .slick-next {
-    right: -1rem;
+    right: 0rem;
   }
   .main-twoform__content{
     grid-template-columns: 1fr;
+  }
+  .slider.slider-nav .slick-prev {
+    left: 0rem;
   }
   .main-twoform__img {
     height: auto;
@@ -233,6 +245,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+  .slider.slider-for .slick-dots {
+    display: flex;
+    left: 25%;
+  }
   .navbar-toggler{
     padding-right: 0px !important;
   }
@@ -298,7 +314,10 @@
     width: 100%;
   }
   .slider.slider-nav .slick-next {
-    right: -1.5rem;
+    right: 7.5rem;
+  }
+  .slider.slider-nav .slick-prev {
+    left: 7rem;
   }
   .slider.slider-nav .slick-prev,.slider.slider-nav .slick-next{
     top:9rem;
@@ -420,7 +439,9 @@
     padding: 0 2rem;
   }
   .slider.slider-nav .slick-next {
-    right: 22.5rem;
+    right: 31.5rem;
+  }.slider.slider-nav .slick-prev {
+    left: 7rem;
   }
   .slider.slider-nav .slick-prev,.slider.slider-nav .slick-next{
     top: 12rem;
@@ -473,6 +494,10 @@
   }
   .main-gallery__img{
     height: 270px;
+  }
+  .slider.slider-for .slick-dots {
+    display: flex;
+    left: 12%;
   }
 }
 
