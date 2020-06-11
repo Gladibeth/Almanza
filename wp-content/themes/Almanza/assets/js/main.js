@@ -23,6 +23,16 @@ $(window).scroll(function() {
   }
 });
 
+
+$(function () {
+  'use strict'
+
+  $('.nav-item').on('click', function () {
+    $('.nav-item').removeClass("active");
+    $(this).addClass('active')
+  })
+})
+
 $(".js-gotop").click(function() {
   $("html, body").animate({scrollTop: 0}, 1000);
 });
