@@ -63,7 +63,7 @@
                 </dd>
                 <dt>Celular</dt>
                 <dd>
-                  <a target="_blank" href='tel:573134579977'>+ 57 3134579977</a>
+                  <a target="_blank" href='http://api.whatsapp.com/send?phone=573134579977'>+ 57 3134579977</a>
                 </dd>
               </dl>
               <a class='btn_custom btn--large btn--filledTransparent' target="_blank"  href="<?php echo get_template_directory_uri();?>/assets/pdf/Presentacion-Almanza.pdf">Descargar Brochure</a>

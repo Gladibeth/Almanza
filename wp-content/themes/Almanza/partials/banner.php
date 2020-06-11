@@ -83,6 +83,7 @@
                   </div>
                 </div>
               </form>
+              <div id="detalles-proyecto"></div>
             </div>
           </div>
         </div>

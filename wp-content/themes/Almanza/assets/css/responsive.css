@@ -67,14 +67,30 @@
     width: 100%;
   }
   .main-twoform,.main-location, .main-zone, .main-details {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .main-zone.urbanismo .main-description__general {
+    width: 100%;
+    margin-top: 0;
+  }
+  .section-detalle {
+    padding: 40px 0;
+  }
+  .bg-title-planos{
+    margin-top: -3rem;
+  }
+  .main-zone.urbanismo {
+    padding-top: 40px;
   }
   .main-maps{
     padding-bottom: 30px;
   }
   .main-about{
-    padding-bottom: 50px;
+    padding-bottom: 20px;
+  }
+  .main-gallery {
+    padding-top: 25px;
   }
   .slider-for .slick-dots li:nth-child(1):after, .slider-for .slick-dots li:nth-child(2):after, .slider-for .slick-dots li:nth-child(3):after, .slider-for .slick-dots li:nth-child(4):after{
     font-size: 15px;
@@ -136,6 +152,7 @@
   }
   .main-zone__img {
     padding-top: 0rem;
+    height: auto;
   }
   .main{
     margin-top: -3rem;
@@ -156,6 +173,7 @@
   .mask__img__nerby{
     width: 75%;
     left: -0.5rem;
+    bottom: -6.5rem;
   }
   .mask__img__zone {
     position: absolute;
@@ -174,7 +192,12 @@
     height: 200px;
   }
   .main-zone.urbanismo .main-zone__item:nth-child(2) {
-    padding: 2rem 0rem 0 0rem;
+    padding: 0rem 0rem 0 0rem;
+    order: -1;
+  }
+
+  footer {    
+    padding-top: 2rem;
   }
   .main-gallerytwo__content{
     display: inherit;
@@ -196,6 +219,9 @@
   }
   .main-gallerytwo__content .slick-next{
     left: 3rem !important;
+  }
+  .main-gallery__img:before, .main-slidernav__img:after{
+    opacity: 1;
   }
 }
 

@@ -15,6 +15,19 @@ $(function () {
   })
 })
 
+$(window).scroll(function() {
+  if ($(this).scrollTop()) {
+      $('.js-gotop').fadeIn();
+  } else {
+      $('.js-gotop').fadeOut();
+  }
+});
+
+$(".js-gotop").click(function() {
+  $("html, body").animate({scrollTop: 0}, 1000);
+});
+
+
 
 $('.panel-collapse').on('show.bs.collapse', function () {
   $(this).siblings('.panel-heading').addClass('active');

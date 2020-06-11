@@ -24,13 +24,14 @@
                   <input class="form-control" id="formGroupExampleInput2" placeholder="" type="email">
                 </div>
                 <div class="form-group">
+                  <label for="">Teléfono</label>
+                  <input class="form-control" id="formGroupExampleInput2" placeholder="" type="tel">
+                </div>
+                <div class="form-group">
                   <label for="">Ciudad</label>
                   <input class="form-control" id="formGroupExampleInput2" placeholder="" type="text">
                 </div>
-                <div class="form-group">
-                    <label for="">Teléfono</label>
-                    <input class="form-control" id="formGroupExampleInput2" placeholder="" type="tel">
-                  </div>
+                
                 <div class="form-group">
                   <label for="">Mensaje</label>
                   <textarea name="" placeholder="" id="" cols="30" rows="10"></textarea>

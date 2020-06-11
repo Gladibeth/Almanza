@@ -193,6 +193,30 @@ section {
   background: #9E9E9E;
 } */
 
+.fixed-buttons {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 5;
+  display: flex;
+}
+
+.fixed-buttons .whatsapp, .fixed-buttons .js-gotop {
+  height: 70px;
+  width: 50px;
+  cursor: pointer;
+  margin: 0 8px;
+}
+
+.fixed-buttons .whatsapp img, .fixed-buttons .js-gotop img {
+  width: 100%;
+}
+
+.fixed-buttons .js-gotop {
+  display: none;
+}
+
+
 /****** BTNS *****/
 .btn_custom {
   display: inline-block;
@@ -694,8 +718,8 @@ a.angle__down i{
   color: #000000;
   text-transform: uppercase;
 }
-.main-title__general .main-title__general--medium p{
-  font-size: 43px;
+.main-title__general.main-title__general--medium p{
+  font-size: 45px !important;
 }
 .main-title__general p strong{
   font-weight: 700;
@@ -861,21 +885,21 @@ select option{
 
 /* DETAILS*/
 .main-details{
-  padding-top: 40px;
+  padding-top: 50px;
   padding-bottom: 40px;
 }
 .main-details__content{
   display: grid;
   grid-template-columns: 100%;
 }
-.main-details__item:nth-child(2){
+.main-details__item:nth-child(2) {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: 27% 24% 25% 24%;
   margin-top: 1rem;
 }
 .main-details__box{
   display: grid;
-  grid-template-columns: 15% 85%;
+  grid-template-columns: 13% 87%;
   /* grid-gap: 0.5rem; */
 }
 .main-details__title p{
@@ -886,7 +910,7 @@ select option{
   margin-bottom: 0;
 }
 .main-details__description p{
-  font-size: 13px;
+  font-size: 16px;
   line-height: 1.47;
   letter-spacing: 0.04px;
   color: #474747;
@@ -1186,6 +1210,7 @@ select option{
 .main-twoform textarea{
   border-radius: 3px;
   border: solid 1px #dee2e6;
+  background-color: #fafafa;
   height: 40px;
 }
 
@@ -1669,4 +1694,9 @@ img.hover-shadow {
 }
 .main-zone__item .main-description__general{
   margin-top: 2rem;
+}
+
+a:hover {
+  color: #0056b3;
+  text-decoration: none !important;
 }

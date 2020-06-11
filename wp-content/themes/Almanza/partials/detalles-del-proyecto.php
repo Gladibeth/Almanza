@@ -1,4 +1,4 @@
-      <section id="detalles-proyecto" class="main-details">
+      <section  class="main-details">
         <div class="container-fluid">
           <div class="main-details__content">
             <div class="main-details__item">
