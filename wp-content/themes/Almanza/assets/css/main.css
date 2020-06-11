@@ -1198,7 +1198,7 @@ select option{
   object-fit: cover;
 }
 .main-slidernav__img{
-  height: 400px;
+  height: 470px;
 }
 .main-slidernav__img img{
   width: 100%;
@@ -1449,8 +1449,8 @@ ul.menu li a:hover, dd a:hover{
   margin-top: 2rem;
 }
 .slider.slider-nav .slick-dots{
-  bottom: 0rem;
-  left: -15rem;
+  bottom: -2rem;
+  left: -16rem;
 }
 
 .slider.slider-nav .slick-prev,.slider.slider-nav .slick-next{
