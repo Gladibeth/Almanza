@@ -789,11 +789,26 @@ a.angle__down i{
 .main-oneform__title span{
   font-weight: normal;
 }
-.main-oneform__item form{
+
+
+.main-oneform__item .form-1, ._form-content--grid{
   display: grid;
   grid-template-columns: 35% 45%;
   grid-gap: 1rem;
 }
+
+._form_element{
+  margin-bottom: 1rem;
+}
+
+.btn-formone__content{
+  margin-top: -0.8rem !important;
+}
+.btn-formone__content button{
+  width: 100% !important;
+}
+
+
 
 .main-oneform__item:nth-child(1){
   display: flex;
@@ -1697,6 +1712,6 @@ img.hover-shadow {
 }
 
 a:hover {
-  color: #0056b3;
+  transition: 0.3s ease-in-out;
   text-decoration: none !important;
 }

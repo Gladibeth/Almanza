@@ -223,6 +223,13 @@
   .main-gallery__img:before, .main-slidernav__img:after{
     opacity: 1;
   }
+  ._form-content--grid{
+    grid-template-columns: 1fr !important;
+    grid-gap: 0;
+  }
+  .main-contact__btnbox button{
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -386,7 +393,7 @@
   }
   .mask__img__nerby {
     bottom: -1rem;
-    left: -7rem;
+    left: -3rem;
   }
   .mask__img__zone {
     bottom: -3rem;
