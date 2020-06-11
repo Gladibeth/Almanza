@@ -1715,3 +1715,6 @@ a:hover {
   transition: 0.3s ease-in-out;
   text-decoration: none !important;
 }
+.main-oneform__item ._form-thank-you{
+  color:  #fff !important;
+}
