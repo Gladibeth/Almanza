@@ -39,7 +39,7 @@
                 Nombre y apellido
               </label>
               <div class="_field-wrapper">
-                <input type="text" name="fullname" placeholder="" />
+                <input type="text" name="fullname" placeholder="" required />
               </div>
             </div>
             <div class="_form_element _x48647240 _full_width " >
@@ -50,12 +50,12 @@
                 <input type="text" name="email" placeholder="" required/>
               </div>
             </div>
-            <div class="_form_element _x80842056 _full_width " >
+            <div class="_form_element _x80842056 _full_width "  >
               <label class="_form-label">
                 Teléfono
               </label>
               <div class="_field-wrapper">
-                <input type="text" name="phone" placeholder="" />
+                <input type="text" name="phone" placeholder="" required />
               </div>
             </div>
             <div class="_form_element _field1 _full_width " >
@@ -63,7 +63,7 @@
                 Ciudad
               </label>
               <div class="_field-wrapper">
-                <input type="text" name="field[1]" value="" placeholder="" />
+                <input type="text" name="field[1]" value="" placeholder="" required />
               </div>
             </div>
             <div class="_form_element _field2 _full_width " >
@@ -78,7 +78,7 @@
               
               <input data-autofill="false" type="hidden" name="field[4][]" value="~|">
               <div class="_row _checkbox-radio">
-                <input id="field_4Acepto" type="checkbox" name="field[4][]" value="Acepto"   >
+                <input id="field_4Acepto" type="checkbox" name="field[4][]" value="Acepto" required  >
                 <span>
                   <label for="field_4Acepto" class="font-general main-oneform__text main-oneform__textDark ">
                     Acepto
