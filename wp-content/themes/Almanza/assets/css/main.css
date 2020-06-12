@@ -962,9 +962,29 @@ select option{
   grid-template-columns:42% 58%;
   padding-bottom: 2rem;
 }
+
+
 .main-about__img img{
   width: 100%;
+  transform-style: inherit;
+  transition: all 10s;
+  -moz-transition: all 10s;
+  -webkit-transition: all 10s;
+  -o-transition: all 10s;
 }
+.main-about__img:hover img {
+  -moz-transform: scale(2);
+  -webkit-transform: scale(2);
+  -o-transform: scale(2);
+  -ms-transform: scale(2);
+  transform: scale(2);
+  transition: all 10s;
+  -moz-transition: all 10s;
+  -webkit-transition: all 10s;
+  -o-transition: all 10s;
+}
+
+
 .main-about__item:nth-child(1){
   padding-top: 2rem;
 }
@@ -988,6 +1008,7 @@ select option{
 
 .main-about__img{
   position: relative;
+  overflow: hidden;
 }
 
 .Almanza-de-Llanogran {

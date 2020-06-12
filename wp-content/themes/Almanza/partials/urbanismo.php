@@ -10,7 +10,7 @@
       </p>
     </div>
     <div class="main-zone__content">
-      <div class="main-zone__item">
+      <div class="main-zone__item wow fadeInLeft"  data-wow-delay='.5s'>
         <div class="main-zone__img">
           <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
         </div>

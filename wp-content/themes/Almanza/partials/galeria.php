@@ -10,13 +10,14 @@
             <div class="main-gallery__item">
                 <?php $args = array( 'post_type' => 'galeria', 'posts_per_page' => 6);
                       $galeriaCount = 1;
+                      $delay = 0;
                 ?>   
                 <?php $loop = new WP_Query( $args ); ?>
                 <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-              <div class="main-gallery__img" onclick="openModal();currentSlide(<?php echo $galeriaCount; ?>)">
+              <div class="main-gallery__img wow fadeIn" data-wow-delay='<?php echo $delay; ?>s' onclick="openModal();currentSlide(<?php echo $galeriaCount; ?>)">
                 <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
               </div>
-              <?php $galeriaCount++; endwhile; ?>
+              <?php $delay+= 0.5; $galeriaCount++; endwhile; ?>
             </div>
 
            <div class="main-gallery__item">

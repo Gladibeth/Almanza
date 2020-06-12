@@ -10,10 +10,11 @@
               </div>
             </div>
             <div class="main-details__item">
-            	<?php $args = array( 'post_type' => 'detalles');?>   
+            	<?php $args = array( 'post_type' => 'detalles');?>  
+              <?php $delay_count = 0; ?> 
     <?php $loop = new WP_Query( $args ); ?>
     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-              <div class="main-details__box">
+              <div class="main-details__box wow fadeIn" data-wow-delay='<?php echo $delay_count; ?>s'>
                 <div class="main-details__icon">
                   <img src="<?php echo get_the_post_thumbnail_url(); ?>" alt="">
                 </div>
@@ -26,7 +27,8 @@
                   </div>
                 </div>
               </div>
-          <?php endwhile; ?>
+              
+          <?php $delay_count+=0.5;  endwhile; ?>
       
             </div>
           </div>
