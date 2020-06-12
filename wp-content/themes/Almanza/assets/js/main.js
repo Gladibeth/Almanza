@@ -34,20 +34,6 @@ $(function () {
 })
 
 
-$(document).ready(function() {
-  var dynamicDelay = [
-    1200,
-    1300,
-    1400,
-    1500
-  ];
-  var fallbackValue = "500ms";
-
-  $("main-details__box.wow.fadeIn").each(function(index) {
-    $(this).attr("data-wow-delay", typeof dynamicDelay[index] === 'undefined' ? fallbackValue : dynamicDelay[index] + "ms");
-  });
-});
-
 
 $(".js-gotop").click(function() {
   $("html, body").animate({scrollTop: 0}, 1000);
