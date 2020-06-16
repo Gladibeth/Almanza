@@ -26,11 +26,11 @@
         </div>
         <div class="main-description__general">
           <p><?php the_content(); ?></p>
-          <div class="main-urbanismos__grados">
-            <strong><?php the_field('grados') ?></strong>
+          <!-- <div class="main-urbanismos__grados">
+            <strong>< ?php the_field('grados') ?></strong>
             <br>
-            <strong><?php the_field('metros') ?></strong>
-          </div>
+            <strong>< ?php the_field('metros') ?></strong>
+          </div> -->
         </div>
 
       </div>
